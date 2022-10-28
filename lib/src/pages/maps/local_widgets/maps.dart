@@ -37,7 +37,7 @@ class Maps extends StatelessWidget {
                       Icons.location_on,
                       color: Colors.red,
                     ),
-                    point: LatLng(_.direccion.latitud, _.direccion.longitud),
+                    point: LatLng(_.addresses.latitud, _.addresses.longitud),
                   ),
                   Marker(
                     builder: (ctx) => const Icon(

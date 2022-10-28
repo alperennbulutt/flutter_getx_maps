@@ -14,21 +14,21 @@ class MapsPage extends StatelessWidget {
     return GetBuilder<MapsController>(
       id: 'maps',
       builder: (_) {
-        print('gelen latitu' + _.direccion.latitud.toString());
-        print('gelen longitu' + _.direccion.longitud.toString());
+        print('gelen latitu' + _.addresses.latitud.toString());
+        print('gelen longitu' + _.addresses.longitud.toString());
 
         if (_.loading) {
           return const Splash(mensaje: "Loading");
         }
         return Scaffold(
           appBar: AppBar(
-            title: Text(_.direccion.name),
+            title: Text(_.addresses.name),
           ),
           body: Column(
             children: [
               Center(
                 child: Text(
-                  "Latitude   |   Longitud\n${_.direccion.latitud} | ${_.direccion.longitud}",
+                  "Latitude   |   Longitud\n${_.addresses.latitud} | ${_.addresses.longitud}",
                   textAlign: TextAlign.center,
                   style: const TextStyle(fontSize: 20.0),
                 ),

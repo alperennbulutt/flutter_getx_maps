@@ -10,7 +10,7 @@ class MapsController extends GetxController {
 
   ///--->
   ///<---List
-  Addresses _direccion = Addresses(
+  Addresses _addresses = Addresses(
     name: "",
     streets: "",
     number: 0,
@@ -19,7 +19,7 @@ class MapsController extends GetxController {
     latitud: 0,
     longitud: 0,
   );
-  Addresses get direccion => _direccion;
+  Addresses get addresses => _addresses;
 
   ///--->
   ///<---Loading
@@ -86,7 +86,7 @@ class MapsController extends GetxController {
   ///<---overriders
   @override
   void onInit() {
-    _direccion = Get.arguments;
+    _addresses = Get.arguments;
     super.onInit();
   }
 
