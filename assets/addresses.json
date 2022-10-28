@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Miscelánea Camis El 21",
+    "streets": "Calle Texas",
+    "number": 608,
+    "road": "Calle Indiana y Calle California",
+    "neighborhood": "Fraccionamiento El 21",
+    "latitud": 22.009873,
+    "longitud": -98.9949077
+  },
+  {
+    "name": "Domicilio Particular",
+    "streets": "Calle Cedro",
+    "number": 539,
+    "road": "Calle Aquismón y Calle Linares",
+    "neighborhood": "neighborhood 20 de Noviembre",
+    "latitud": 22.00362,
+    "longitud": -99.001114
+  },
+  {
+    "name": "Miscelánea Camis",
+    "streets": "Calle Durango",
+    "number": 706,
+    "road": "Calle Puebla y Calle Colima",
+    "neighborhood": "neighborhood  San Rafael",
+    "latitud": 21.98779,
+    "longitud": -98.992014
+  },
+  {
+    "name": "Ankara",
+    "streets": "Calle Ponciano Arriaga",
+    "number": 0,
+    "road": "Calle Benito Juárez y Calle General Blas Escontría",
+    "neighborhood": "neighborhood Obrera",
+    "latitud": 39.899992,
+    "longitud": 32.867186
+  }
+]
