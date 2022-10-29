@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 import 'package:flutter_getx_maps/src/global_widgets/splash.dart';
 import 'package:flutter_getx_maps/src/pages/home/home_controller.dart';
 import 'package:flutter_getx_maps/src/pages/home/local_widgets/addresses_item.dart';
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
       id: 'home',
       builder: (_) {
         if (_.loading) {
-          return const Splash(mensaje: "Loading");
+          return const Splash(message: "Loading");
         }
         return Scaffold(
           appBar: AppBar(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 import 'package:flutter_getx_maps/src/pages/home/home_controller.dart';
 import 'package:get/get.dart';
 

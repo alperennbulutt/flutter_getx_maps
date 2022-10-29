@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Splash extends StatelessWidget {
-  final String mensaje;
-  final MainAxisAlignment posicion;
-  final double tamMensaje;
-  final double separacion;
+  final String message;
+  final MainAxisAlignment position;
+  final double fontSize;
+  final double space;
 
   const Splash({
     Key? key,
-    required this.mensaje,
-    this.posicion = MainAxisAlignment.center,
-    this.tamMensaje = 20.0,
-    this.separacion = 40.0,
+    required this.message,
+    this.position = MainAxisAlignment.center,
+    this.fontSize = 20.0,
+    this.space = 40.0,
   }) : super(key: key);
 
   @override
@@ -19,16 +19,16 @@ class Splash extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: posicion,
+          mainAxisAlignment: position,
           children: [
             Text(
-              mensaje,
+              message,
               style: TextStyle(
-                fontSize: tamMensaje,
+                fontSize: fontSize,
               ),
             ),
             SizedBox(
-              height: separacion,
+              height: space,
             ),
             const CircularProgressIndicator(),
           ],

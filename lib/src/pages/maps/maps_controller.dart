@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 import 'package:get/get.dart';
 import 'package:location/location.dart';
 
@@ -14,7 +14,7 @@ class MapsController extends GetxController {
     name: "",
     streets: "",
     number: 0,
-    entreCalles: "",
+    road: "",
     neighborhood: "",
     latitud: 0,
     longitud: 0,

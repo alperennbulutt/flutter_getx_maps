@@ -1,13 +1,13 @@
 // To parse this JSON data, do
 //
-//     final direcciones = direccionesFromJson(jsonString);
+//     final addresses = addressesFromJson(jsonString);
 
 class Addresses {
   Addresses({
     required this.name,
     required this.streets,
     required this.number,
-    required this.entreCalles,
+    required this.road,
     required this.neighborhood,
     required this.latitud,
     required this.longitud,
@@ -16,7 +16,7 @@ class Addresses {
   String name;
   String streets;
   int number;
-  String entreCalles;
+  String road;
   String neighborhood;
   double latitud;
   double longitud;
@@ -25,7 +25,7 @@ class Addresses {
         name: json["name"],
         streets: json["streets"],
         number: json["number"],
-        entreCalles: json["road"],
+        road: json["road"],
         neighborhood: json["neighborhood"],
         latitud: json["latitud"],
         longitud: json["longitud"],
@@ -35,7 +35,7 @@ class Addresses {
         "name": name,
         "streets": streets,
         "number": number,
-        "road": entreCalles,
+        "road": road,
         "neighborhood": neighborhood,
         "latitud": latitud,
         "longitud": longitud,
@@ -54,7 +54,7 @@ class Addresses {
         name: name,
         streets: streets,
         number: number,
-        entreCalles: entreCalles,
+        road: road,
         neighborhood: neighborhood,
         latitud: latitud,
         longitud: longitud,

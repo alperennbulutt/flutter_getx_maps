@@ -1,4 +1,4 @@
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 import 'package:flutter_getx_maps/src/data/providers/local/local_addresses.dart';
 import 'package:get/get.dart';
 

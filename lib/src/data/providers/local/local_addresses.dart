@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 
 class AddressesProvider {
   List<Addresses> _addresses = [];

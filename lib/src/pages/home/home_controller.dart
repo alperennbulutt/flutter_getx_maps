@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter_getx_maps/src/data/models/direcciones.dart';
+import 'package:flutter_getx_maps/src/data/models/addresses.dart';
 import 'package:flutter_getx_maps/src/data/repositories/local/addresses_repository.dart';
 import 'package:flutter_getx_maps/src/routers/app_routes.dart';
 import 'package:get/get.dart';
@@ -32,7 +32,7 @@ class HomeController extends GetxController {
   Future<void> _load() async {
     try {
       _addresses = await _addressesRepository.getAddresses();
-      print("Direcciones::::: ${_addresses.length} ");
+      print("Addresses::::: ${_addresses.length} ");
 
       _loading = false;
       update(['home']);
@@ -50,8 +50,8 @@ class HomeController extends GetxController {
 
   ///--->
   ///<---goToMap
-  void goToMap(Addresses direccion) {
-    Get.toNamed(AppRoutes.MAPS, arguments: direccion);
+  void goToMap(Addresses addresses) {
+    Get.toNamed(AppRoutes.MAPS, arguments: addresses);
   }
 
   ///--->

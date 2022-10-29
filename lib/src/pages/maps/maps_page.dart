@@ -18,7 +18,7 @@ class MapsPage extends StatelessWidget {
         print('gelen longitu' + _.addresses.longitud.toString());
 
         if (_.loading) {
-          return const Splash(mensaje: "Loading");
+          return const Splash(message: "Loading");
         }
         return Scaffold(
           appBar: AppBar(
